@@ -1,0 +1,9 @@
+.ThinButton {
+  @apply bg-dark btn-thin;
+  
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-black;
+    }
+  }
+}

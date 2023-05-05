@@ -1,0 +1,18 @@
+.header__nav_list {
+  @apply flex items-center gap-10 transition-transform;
+  
+  @media (width < 768px) {
+    & {
+      @apply opacity-0 absolute top-0 left-0;
+      transform: translateY(-300px);
+    }
+  }
+  
+  &[data-burger="true"] {
+    @apply w-full opacity-100 bg-white flex-col items-center justify-center gap-10;
+    
+    height: calc(100vh - 100px);
+    
+    transform: translateY(100px);
+  }
+}

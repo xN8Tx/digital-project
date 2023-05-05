@@ -1,0 +1,9 @@
+.DarkThickLink {
+  @apply btn-thick bg-dark;
+  
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-black;
+    }
+  }
+}

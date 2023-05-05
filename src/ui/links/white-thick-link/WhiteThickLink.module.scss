@@ -1,0 +1,9 @@
+.WhiteThickLink {
+  @apply btn-thick bg-white;
+  
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-grey;
+    }
+  }
+}

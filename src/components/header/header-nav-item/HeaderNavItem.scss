@@ -1,0 +1,13 @@
+.header__nav_link {
+  @apply uppercase text-xss text-dark font-normal transition-all;
+  
+  &.active {
+    @apply text-black font-bold;
+  }
+  
+  @media (hover: hover) {
+    &:hover {
+      @apply text-grey;
+    }
+  }
+}
