@@ -1,11 +1,9 @@
 import React from 'react';
 
-import { ITextUIProps } from '../../../types/types';
+import { TextUIProps } from '../../../types/types';
 
 import style from './BigInfoText.module.scss';
 
-export default function BigInfoText({ children }: ITextUIProps) {
-  return (
-    <p className={style.BigInfoText}>{children}</p>
-  );
+export default function BigInfoText({ children }: TextUIProps) {
+  return <p className={style.BigInfoText}>{children}</p>;
 }

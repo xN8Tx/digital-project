@@ -1,24 +1,24 @@
 import React from 'react';
 
-interface ITextUIProps {
-  children: React.ReactNode,
+interface ChildrenProps {
+  children: React.ReactNode;
 }
 
-interface IInputUIProps {
-  placeholder: string,
-  type: string,
-  value: string,
-  onChange: (event: any) => void,
+interface TextUIProps extends ChildrenProps {}
+
+interface InputUIProps {
+  placeholder: string;
+  type: string;
+  value: string;
+  onChange: (event: any) => void;
 }
 
-interface IButtonUIProps extends ITextUIProps {
-  onClick: (event: any) => void,
+interface ButtonUIProps extends ChildrenProps {
+  onClick: (event: any) => void;
 }
 
-interface ILinkUIProps extends ITextUIProps {
+interface LinkProps extends ChildrenProps {
   to: string;
 }
 
-export type {
-  ITextUIProps, IInputUIProps, IButtonUIProps, ILinkUIProps,
-};
+export type { ChildrenProps, TextUIProps, InputUIProps, ButtonUIProps, LinkProps };

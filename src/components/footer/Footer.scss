@@ -1,0 +1,36 @@
+.footer {
+  @apply absolute bottom-0 w-full bg-black;
+
+  & > .wrapper {
+    @apply flex items-start justify-between py-14;
+    min-height: 227px;
+
+    @media (width < 825px) {
+      & {
+        @apply flex flex-col items-center justify-center gap-10 text-center;
+      }
+    }
+  }
+}
+
+.footer__text {
+  @apply font-medium text-sm text-white flex items-start gap-3 transition-all leading-6;
+
+  max-width: 280px;
+
+  & > svg {
+    flex: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @apply text-grey;
+    }
+  }
+
+  @media (width < 825px) {
+    & {
+      @apply justify-center;
+    }
+  }
+}

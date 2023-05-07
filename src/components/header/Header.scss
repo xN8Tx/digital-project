@@ -1,9 +1,9 @@
 .header {
-  @apply fixed bg-white;
-  
+  @apply bg-white;
+
   width: 100%;
   height: 100px;
-  
+
   & > .wrapper {
     @apply h-full flex items-center justify-between;
   }

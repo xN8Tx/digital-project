@@ -1,0 +1,7 @@
+.footer__column {
+  @apply h-full flex flex-col gap-6;
+}
+
+.footer__article {
+  @apply text-base text-white font-bold;
+}

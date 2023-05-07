@@ -1,0 +1,10 @@
+.footer__rights {
+  @apply w-full flex items-center justify-center;
+
+  height: 70px;
+  border-top: 1px solid #bdbdbd;
+
+  &_text {
+    @apply text-xss font-light text-grey;
+  }
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { IButtonUIProps } from '../../../types/types';
+import { ButtonUIProps } from '../../../types/types';
 
 import style from './ThickButton.module.scss';
 
-export default function ThickButton({ children, onClick }:IButtonUIProps) {
+export default function ThickButton({ children, onClick }: ButtonUIProps) {
   return (
     <button type="button" className={style.ThickButton} onClick={onClick}>
       {children}
