@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
+import { Context } from './context/context';
+
 import App from './app/App';
 
 import './index.scss';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <Context.Provider value={{ clientWidth: window.innerWidth }}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Context.Provider>,
 );

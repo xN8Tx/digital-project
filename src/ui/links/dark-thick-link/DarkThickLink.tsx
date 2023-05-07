@@ -11,7 +11,7 @@ export default function DarkThickLink({ children, to }:ILinkUIProps) {
   return (
     <Link to={to} className={style.DarkThickLink}>
       {children}
-      <img src={ArrowRight} alt="right"/>
+      <img src={ArrowRight} alt="right" />
     </Link>
   );
 }

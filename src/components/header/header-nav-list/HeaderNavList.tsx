@@ -13,9 +13,15 @@ interface IHeaderNavListProps {
 export default function HeaderNavList({ isBurgerActive }: IHeaderNavListProps) {
   return (
     <ul className="header__nav_list" data-burger={isBurgerActive}>
-      {/* eslint-disable-next-line array-callback-return */}
-      {routes.map((el, index) => {
-        if (el.isShowed) return <HeaderNavItem key={index} path={el.path}>{el.name}</HeaderNavItem>;
+      {routes.map((route, index) => {
+        if (route.isShowed) {
+          return (
+            <HeaderNavItem key={index} path={route.path} isBurgerActive={isBurgerActive}>
+              {route.name}
+            </HeaderNavItem>
+          );
+        }
+        return null;
       })}
     </ul>
   );

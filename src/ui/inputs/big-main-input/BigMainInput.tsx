@@ -4,9 +4,11 @@ import { IInputUIProps } from '../../../types/types';
 
 import style from './BigMainInput.module.scss';
 
-export default function BigMainInput({ placeholder, type, value, onChange }: IInputUIProps) {
+export default function BigMainInput({
+  placeholder, type, value, onChange,
+}: IInputUIProps) {
   return (
-    <input 
+    <input
       type={type}
       value={value}
       onChange={onChange}

@@ -4,6 +4,17 @@
   width: 25px;
   height: 20px;
   
+  &:focus {
+    & > .header__burger_button {
+      @apply bg-grey;
+      
+      &::after, &::before {
+        @apply bg-grey;
+      }
+    }
+  
+  }
+  
   @media (width < 768px) {
     & {
       @apply flex items-center justify-center;
@@ -11,7 +22,7 @@
   }
   
   &_button {
-    @apply relative bg-dark transition-all;
+    @apply relative z-20 bg-dark transition-all;
     
     width: 25px;
     height: 2px;
@@ -42,5 +53,13 @@
         transform: rotate(90deg);
       }
     }
+    
+    // @media (hover: hover) {
+    //   @apply bg-grey;
+
+    //   &::before, &::after {
+    //     @apply bg-grey;
+    //   }
+    // }
   }
 }

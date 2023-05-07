@@ -85,6 +85,12 @@ module.exports = {
           '&:focused': {
             borderLeft: `2px solid ${theme('color.grey')}`,
           }
+        },
+        '.main-border': {
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          borderColor: theme('colors.green'),
+          borderRadius: '5px'
         }
       });
     })

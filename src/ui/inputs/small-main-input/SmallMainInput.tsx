@@ -4,9 +4,11 @@ import { IInputUIProps } from '../../../types/types';
 
 import style from './SmallMainInput.module.scss';
 
-export default function SmallMainInput({ placeholder, type, value, onChange }: IInputUIProps) {
+export default function SmallMainInput({
+  placeholder, type, value, onChange,
+}: IInputUIProps) {
   return (
-    <input 
+    <input
       type={type}
       value={value}
       onChange={onChange}

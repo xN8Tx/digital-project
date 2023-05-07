@@ -4,7 +4,7 @@ import { ITextUIProps } from '../../../types/types';
 
 import style from './SmallInfoText.module.scss';
 
-export default function SmallInfoText({ children }: ITextUIProps){
+export default function SmallInfoText({ children }: ITextUIProps) {
   return (
     <p className={style.SmallInfoText}>{children}</p>
   );

@@ -1,10 +1,14 @@
 .header__nav_link {
-  @apply uppercase text-xss text-dark font-normal transition-all;
-  
+  @apply uppercase text-xss text-dark font-normal transition-all;  
+
   &.active {
     @apply text-black font-bold;
   }
-  
+
+  &:focus {
+    @apply text-grey;
+  }
+
   @media (hover: hover) {
     &:hover {
       @apply text-grey;

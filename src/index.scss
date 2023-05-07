@@ -20,4 +20,12 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
+body[data-lock="true"] {
+  overflow: hidden;
+}
+
+body[data-lock="false"] {
+  overflow: visible;
+}
+
 .wrapper { margin: 0 9%; }

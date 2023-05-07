@@ -1,4 +1,6 @@
 .header__logo {
+  @apply relative z-20;
+  
   width: 27px;
   height: 27px;
   

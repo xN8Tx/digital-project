@@ -1,17 +1,15 @@
 import React from 'react';
 
-import Header from '../components/header';
+import Header from '../components/header/Header';
 import AppRouter from '../components/app-router/AppRouter';
 
 import './App.scss';
 
-function App() {
+export default function App() {
   return (
-    <main className="App">
+    <>
       <Header />
       <AppRouter />
-    </main>
+    </>
   );
 }
-
-export default App;

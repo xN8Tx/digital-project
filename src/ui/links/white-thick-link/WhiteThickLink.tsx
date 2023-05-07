@@ -11,7 +11,7 @@ export default function WhiteThickLink({ children, to }:ILinkUIProps) {
   return (
     <Link to={to} className={style.WhiteThickLink}>
       {children}
-      <img src={ArrowRight} alt="right"/>
+      <img src={ArrowRight} alt="right" />
     </Link>
   );
 }

@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './HeaderNavItem.scss';
+import { Context } from '../../../context/context';
 
 interface IHeaderNavItemProps {
   children: React.ReactNode,
+  isBurgerActive: boolean,
   path: string,
-};
+}
 
-export default function HeaderNavItem({ children, path }: IHeaderNavItemProps) {
+export default function HeaderNavItem({ children, path, isBurgerActive }: IHeaderNavItemProps) {
+  const { clientWidth } = useContext(Context);
+
+  const isTabIndexActive = clientWidth <= 768 && isBurgerActive;
+
   return (
     <li className="header__nav_item">
-      <NavLink to={path} className="header__nav_link">{children}</NavLink>
+      <NavLink tabIndex={isTabIndexActive ? 0 : -1} to={path} className="header__nav_link">{children}</NavLink>
     </li>
   );
 }

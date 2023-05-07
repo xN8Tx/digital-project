@@ -4,20 +4,17 @@ import HeaderLogo from './header-logo/HeaderLogo';
 import HeaderNavList from './header-nav-list/HeaderNavList';
 import HeaderBurger from './header-burger/HeaderBurger';
 
-import './index.scss';
-
+import './Header.scss';
 
 export default function Header() {
   const [isBurgerActive, setIsBurgerActive] = useState<boolean>(false);
-  
-  const onBurgerChange = () => setIsBurgerActive(!isBurgerActive);
-  
+
   return (
     <header className="header">
       <div className="wrapper">
         <HeaderLogo />
-        <HeaderNavList isBurgerActive={isBurgerActive}/>
-        <HeaderBurger isBurgerActive={isBurgerActive} onBurgerChange={onBurgerChange}/>
+        <HeaderBurger isBurgerActive={isBurgerActive} setIsBurgerActive={setIsBurgerActive} />
+        <HeaderNavList isBurgerActive={isBurgerActive} />
       </div>
     </header>
   );
