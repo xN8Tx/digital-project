@@ -1,3 +1,7 @@
 .BigArticleText {
   @apply text-xl text-dark font-normal;
+
+  @media (width < 428px) {
+    @apply text-base;
+  }
 }

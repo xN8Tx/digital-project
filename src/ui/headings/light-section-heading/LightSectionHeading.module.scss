@@ -1,3 +1,7 @@
 .LightSectionHeading {
   @apply text-3xl text-grey font-light;
+
+  @media (width < 428px) {
+    font-size: 54px;
+  }
 }

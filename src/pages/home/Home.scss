@@ -1,0 +1,9 @@
+.home-section {
+  @apply flex flex-col gap-14;
+
+  @media (width < 768px) {
+    & {
+      @apply items-center;
+    }
+  }
+}

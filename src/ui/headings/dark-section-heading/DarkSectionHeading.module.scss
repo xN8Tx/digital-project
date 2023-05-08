@@ -1,3 +1,7 @@
 .DarkSectionHeading {
-  @apply text-3xl text-dark font-bold
+  @apply text-3xl text-dark font-bold;
+
+  @media (width < 428px) {
+    font-size: 54px;
+  }
 }

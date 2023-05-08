@@ -4,6 +4,9 @@ import { useProjectsStore } from '../../store/projects-store';
 import Concept from './components/concept/Concept';
 import AboutUs from './components/about-us/AboutUs';
 
+import './Home.scss';
+import Goals from './components/goals/Goals';
+
 export default function Home() {
   const loading = useProjectsStore((state) => state.loading);
   const fetchProjects = useProjectsStore((state) => state.fetchData);
@@ -19,6 +22,7 @@ export default function Home() {
         <div className="wrapper">
           <Concept />
           <AboutUs />
+          <Goals />
         </div>
       )}
     </main>

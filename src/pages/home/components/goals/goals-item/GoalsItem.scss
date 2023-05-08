@@ -1,0 +1,14 @@
+.home-goals__item {
+  @apply flex gap-7;
+  min-height: 140px;
+  max-width: 420px;
+
+  &_index {
+    @apply text-grey font-extrabold;
+    font-size: 140px;
+
+    @media (width < 768px) {
+      font-size: 100px;
+    }
+  }
+}

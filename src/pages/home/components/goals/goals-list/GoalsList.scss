@@ -1,0 +1,7 @@
+.home-goals__list {
+  @apply flex justify-between;
+
+  @media (width < 768px) {
+    @apply flex-col justify-center items-center;
+  }
+}
