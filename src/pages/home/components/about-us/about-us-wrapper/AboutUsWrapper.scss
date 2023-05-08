@@ -1,0 +1,7 @@
+.home-about-us__wrapper {
+  @apply h-full flex gap-8;
+
+  @media (width < 768px) {
+    @apply flex-col items-center;
+  }
+}

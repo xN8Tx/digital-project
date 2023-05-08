@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useProjectsStore } from '../../store/projects-store';
 
 import Concept from './components/concept/Concept';
+import AboutUs from './components/about-us/AboutUs';
 
 export default function Home() {
   const loading = useProjectsStore((state) => state.loading);
@@ -14,7 +15,12 @@ export default function Home() {
 
   return (
     <main>
-      <div className="wrapper">{loading === 'succeeded' && <Concept />}</div>
+      {loading === 'succeeded' && (
+        <div className="wrapper">
+          <Concept />
+          <AboutUs />
+        </div>
+      )}
     </main>
   );
 }

@@ -1,0 +1,9 @@
+.home-about-us__text {
+  @apply flex flex-col gap-5;
+
+  max-width: 400px;
+
+  @media (width < 768px) {
+    @apply items-center text-center;
+  }
+}
