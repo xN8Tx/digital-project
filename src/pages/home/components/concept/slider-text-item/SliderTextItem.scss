@@ -1,0 +1,26 @@
+.home-slider__name {
+  @apply absolute text-3xl font-bold text-dark transition-all;
+
+  &[data-active='false'] {
+    opacity: 0;
+    z-index: 0;
+  }
+
+  &[data-active='true'] {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  &_small {
+    @apply text-grey font-light;
+  }
+
+  @media (width < 768px) {
+    & {
+      @apply text-white;
+    }
+    &_small {
+      @apply text-white;
+    }
+  }
+}

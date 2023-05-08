@@ -1,0 +1,7 @@
+.slider__buttons {
+  @apply flex items-center gap-5;
+
+  @media (width < 768px) {
+    @apply gap-0;
+  }
+}

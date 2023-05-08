@@ -4,4 +4,8 @@
   &_bold {
     @apply text-dark;
   }
+
+  @media (width < 768px) {
+    @apply p-4 bg-white;
+  }
 }

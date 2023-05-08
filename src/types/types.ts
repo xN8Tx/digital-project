@@ -1,5 +1,12 @@
 import React from 'react';
 
+type CurrentIndexType = Pick<SliderTypes, 'currentIndex'>;
+
+interface SliderTypes {
+  currentIndex: number;
+  setCurrentIndex: (newIndex: number) => void;
+}
+
 interface GalleryType {
   id: number;
   image: string;
@@ -40,4 +47,15 @@ interface LinkProps extends ChildrenProps {
   to: string;
 }
 
-export type { ChildrenProps, TextUIProps, InputUIProps, ButtonUIProps, LinkProps, ProjectType, GalleryType, StoreType };
+export type {
+  ChildrenProps,
+  TextUIProps,
+  InputUIProps,
+  ButtonUIProps,
+  LinkProps,
+  ProjectType,
+  GalleryType,
+  StoreType,
+  SliderTypes,
+  CurrentIndexType,
+};

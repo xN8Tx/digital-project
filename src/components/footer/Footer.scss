@@ -1,5 +1,5 @@
 .footer {
-  @apply absolute bottom-0 w-full bg-black;
+  @apply w-full bg-black;
 
   & > .wrapper {
     @apply flex items-start justify-between py-14;

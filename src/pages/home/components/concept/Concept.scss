@@ -1,0 +1,13 @@
+.home-concept {
+  @apply w-full mb-28;
+  height: calc(100vh - 100px);
+}
+
+@keyframes sliderAnimations {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -15,7 +15,7 @@
       "id": "2"
     },
     {
-      "name": "Absolute World Towers",
+      "name": "Absolute World",
       "description": "Небоскребы в Торонто, которые становятся все более захватывающими с каждой перспективой, благодаря их витиеватым формам.",
       "imageFirst": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Absolute_Towers_Mississauga._South-west_view.jpg",
       "imageSecond": "https://i.archi.ru/i/112054.jpg",
@@ -29,7 +29,7 @@
       "id": "4"
     },
     {
-      "name": "Porta Nuova Residential Complex",
+      "name": "Porta Nuova",
       "description": "Небольшой жилой комплекс в Милане, который характеризуется искусственным зеленым парком и технологически продуманными системами.",
       "imageFirst": "https://images.unsplash.com/photo-1667230227250-f3bb1bf18d9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       "imageSecond": "https://images.unsplash.com/photo-1666190452949-62e9190eea1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80",
@@ -43,7 +43,7 @@
       "id": "6"
     },
     {
-      "name": "Stadshuskvarteret",
+      "name": "Stadshusk varteret",
       "description": "Жилой комплекс в Стокгольме, состоящий из 31 здания, образующих соседство с уличными двориками и апартаментами.",
       "imageFirst": "https://api.europeana.eu/thumbnail/v3/400/c7f8d70ff6a0f12651de6828f87db6f8",
       "imageSecond": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTu7c8Qs_t-2aVUIKKyT-SWkbLlpb08SybIqwJLfLqIA&s",
@@ -85,7 +85,7 @@
       "id": "12"
     },
     {
-      "name": "Marina Bay Sands",
+      "name": "Marina Bay",
       "description": "Известный небоскреб в Сингапуре, который обладает уникальным дизайном с тремя выступающими частями и разнообразными развлекательными возможностями, включая казино, рестораны, спа и магазины.",
       "imageFirst": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1352&q=80",
       "imageSecond": "https://images.unsplash.com/photo-1516422641841-cd9803ab02c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",

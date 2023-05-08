@@ -1,22 +1,24 @@
 import React from 'react';
 
-import SliderArrowNext from '../../../assets/svg/SliderArrowNext.svg';
-import SliderArrowPrevious from '../../../assets/svg/SliderArrowPrevious.svg';
+import { SliderTypes } from '../../../types/types';
+import { goToNext, goToPrevious } from '../../../utils/slider-functions';
 
-import './SlideButtons.scss';
+import SliderButton from '../slider-button/SliderButton';
 
-interface SliderButtonsProps {
-  type: string;
-  onClick: () => void;
+import './SliderButtons.scss';
+
+interface SliderButtonsProps extends SliderTypes {
+  sliderArray: unknown[];
 }
 
-export default function SliderButtons({ type, onClick }: SliderButtonsProps) {
-  const isNext = type === 'next';
-  const src = isNext ? SliderArrowNext : SliderArrowPrevious;
+export default function SliderButtons({ sliderArray, currentIndex, setCurrentIndex }: SliderButtonsProps) {
+  const onNextButtonClick = () => goToNext({ sliderArray, currentIndex, setCurrentIndex });
+  const onPreviousButtonClick = () => goToPrevious({ sliderArray, currentIndex, setCurrentIndex });
 
   return (
-    <button type="button" className="slider_buttons" onClick={onClick}>
-      <img src={src} alt="" />
-    </button>
+    <div className="slider__buttons">
+      <SliderButton type="previous" onClick={onPreviousButtonClick} />
+      <SliderButton type="next" onClick={onNextButtonClick} />
+    </div>
   );
 }

@@ -12,7 +12,7 @@ interface SliderCountProps {
 export default function SliderCount({ currentIndex, maxIndex }: SliderCountProps) {
   return (
     <div className="slider__count">
-      <span className="slider__count_bold">{leadingZeros(currentIndex)}</span> / {leadingZeros(maxIndex)}
+      <span className="slider__count_bold">{`${leadingZeros(currentIndex + 1)}`}</span> / {leadingZeros(maxIndex)}
     </div>
   );
 }

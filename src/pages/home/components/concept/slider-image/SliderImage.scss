@@ -1,0 +1,37 @@
+.home-slider__image {
+  @apply relative h-full transition-all;
+
+  width: 100%;
+
+  &_img {
+    @apply absolute w-full h-full object-cover transition-all;
+
+    &[data-active='false'] {
+      opacity: 0;
+      z-index: 0;
+    }
+
+    &[data-active='true'] {
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  & > a {
+    @apply absolute bottom-0 left-0;
+
+    &[data-active='false'] {
+      z-index: 20;
+    }
+
+    &[data-active='true'] {
+      z-index: 30;
+    }
+  }
+
+  @media (width < 768px) {
+    & > a {
+      @apply w-full;
+    }
+  }
+}

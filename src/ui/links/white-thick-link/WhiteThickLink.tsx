@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 
 import { LinkProps } from '../../../types/types';
 
-import ArrowRight from '../../../assets/svg/ArrowRight.svg';
+import SliderArrowNext from '../../../assets/svg/SliderArrowNext.svg';
 
 import style from './WhiteThickLink.module.scss';
 
-export default function WhiteThickLink({ children, to }: LinkProps) {
+export default function WhiteThickLink({ children, to, ...props }: LinkProps) {
   return (
-    <Link to={to} className={style.WhiteThickLink}>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <Link to={to} className={style.WhiteThickLink} {...props}>
       {children}
-      <img src={ArrowRight} alt="right" />
+      <img src={SliderArrowNext} alt="right" />
     </Link>
   );
 }
