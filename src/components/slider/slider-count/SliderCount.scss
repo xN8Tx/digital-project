@@ -1,0 +1,7 @@
+.slider__count {
+  @apply text-xl text-grey font-normal;
+
+  &_bold {
+    @apply text-dark;
+  }
+}

@@ -4,39 +4,60 @@ import Certificate from '../pages/certificate';
 import Contacts from '../pages/contacts';
 import Error from '../pages/error';
 import Gallery from '../pages/gallery';
-import Home from '../pages/home';
+import Home from '../pages/home/Home';
 import Project from '../pages/project';
 import Projects from '../pages/projects';
 
 interface IRoutes {
-  name: string,
-  path: string,
-  element: JSX.Element,
-  isShowed: boolean,
+  name: string;
+  path: string;
+  element: JSX.Element;
+  isShowed: boolean;
 }
 
-const routes:IRoutes[] = [
+const routes: IRoutes[] = [
   {
-    name: 'Главная', path: '/', element: <Home />, isShowed: true,
+    name: 'Главная',
+    path: '/',
+    element: <Home />,
+    isShowed: true,
   },
   {
-    name: 'Галерея', path: '/gallery', element: <Gallery />, isShowed: true,
+    name: 'Галерея',
+    path: '/gallery',
+    element: <Gallery />,
+    isShowed: true,
   },
   {
-    name: 'Проекты', path: '/projects', element: <Projects />, isShowed: true,
+    name: 'Проекты',
+    path: '/projects',
+    element: <Projects />,
+    isShowed: true,
   },
   {
-    name: 'Сертификаты', path: '/certificates', element: <Certificate />, isShowed: true,
+    name: 'Сертификаты',
+    path: '/certificates',
+    element: <Certificate />,
+    isShowed: true,
   },
   {
-    name: 'Контакты', path: '/contacts', element: <Contacts />, isShowed: true,
+    name: 'Контакты',
+    path: '/contacts',
+    element: <Contacts />,
+    isShowed: true,
   },
 
   {
-    name: 'Проект', path: '/projects/*', element: <Project />, isShowed: false,
+    name: 'Проект',
+    path: '/projects/*',
+    element: <Project />,
+    isShowed: false,
   },
   {
-    name: 'Ошибка', path: '*', element: <Error />, isShowed: false,
+    name: 'Ошибка',
+    path: '*',
+    element: <Error />,
+    isShowed: false,
   },
 ];
 

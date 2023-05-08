@@ -1,59 +1,59 @@
 .header__burger {
   @apply hidden;
-  
+
   width: 25px;
   height: 20px;
-  
+
   &:focus {
     & > .header__burger_button {
       @apply bg-grey;
-      
-      &::after, &::before {
+
+      &::after,
+      &::before {
         @apply bg-grey;
       }
     }
-  
   }
-  
+
   @media (width < 768px) {
     & {
       @apply flex items-center justify-center;
     }
   }
-  
+
   &_button {
     @apply relative z-20 bg-dark transition-all;
-    
+
     width: 25px;
     height: 2px;
-    
+
     &::after {
       @apply absolute w-full h-full block bg-dark;
-      
-      content: "";
+
+      content: '';
       top: 5px;
     }
-    
+
     &::before {
       @apply absolute w-full h-full block bg-dark;
-      
-      content: "";
+
+      content: '';
       bottom: 5px;
     }
-    
-    &[data-burger="true"] {
+
+    &[data-burger='true'] {
       transform: rotate(-45deg);
-      
+
       &::after {
         opacity: 0;
       }
-      
+
       &::before {
         bottom: 0;
         transform: rotate(90deg);
       }
     }
-    
+
     // @media (hover: hover) {
     //   @apply bg-grey;
 

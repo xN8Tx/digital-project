@@ -1,0 +1,191 @@
+[
+  [
+    {
+      "name": "Aqua Tower",
+      "description": "Великолепный небоскреб в Чикаго, характеризующийся гладкими кривыми линиями на фасаде.",
+      "imageFirst": "https://images.unsplash.com/photo-1543301571-b94000185b26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1430840181928-f99125c6538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      "id": "1"
+    },
+    {
+      "name": "Torre Velasca",
+      "description": "Высокий жилой комплекс в Милане, смешивающий современный дизайн с классическими элементами.",
+      "imageFirst": "https://images.unsplash.com/photo-1655710130839-4a019a64efb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1576697053236-07ca25a3417d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "2"
+    },
+    {
+      "name": "Absolute World Towers",
+      "description": "Небоскребы в Торонто, которые становятся все более захватывающими с каждой перспективой, благодаря их витиеватым формам.",
+      "imageFirst": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Absolute_Towers_Mississauga._South-west_view.jpg",
+      "imageSecond": "https://i.archi.ru/i/112054.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Habitat 67",
+      "description": "Радикальный жилой комплекс в Монреале, в котором кубические блоки объединяются вместе, образуя новый тип архитектуры.",
+      "imageFirst": "https://images.unsplash.com/photo-1680011196321-28b32356544b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1576443730831-02377debbff3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1446&q=80",
+      "id": "4"
+    },
+    {
+      "name": "Porta Nuova Residential Complex",
+      "description": "Небольшой жилой комплекс в Милане, который характеризуется искусственным зеленым парком и технологически продуманными системами.",
+      "imageFirst": "https://images.unsplash.com/photo-1667230227250-f3bb1bf18d9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1666190452949-62e9190eea1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80",
+      "id": "5"
+    },
+    {
+      "name": "The Interlace",
+      "description": "Несколько противоположных и раскрывающихся блоков в Сингапуре, выполненных в стиле вертикальных садов.",
+      "imageFirst": "https://images.unsplash.com/photo-1682034611281-c60b0dea2ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1527928026657-38e53124b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+      "id": "6"
+    },
+    {
+      "name": "Stadshuskvarteret",
+      "description": "Жилой комплекс в Стокгольме, состоящий из 31 здания, образующих соседство с уличными двориками и апартаментами.",
+      "imageFirst": "https://api.europeana.eu/thumbnail/v3/400/c7f8d70ff6a0f12651de6828f87db6f8",
+      "imageSecond": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTu7c8Qs_t-2aVUIKKyT-SWkbLlpb08SybIqwJLfLqIA&s",
+      "id": "7"
+    },
+    {
+      "name": "Bosco Verticale",
+      "description": "Небоскребы в Милане, с пышными горизонтальными лесами на их фасадах.",
+      "imageFirst": "https://images.unsplash.com/photo-1565599573128-ae3ef5c9f478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1538072590730-de9c0c9ac81f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      "id": "8"
+    },
+    {
+      "name": "Glass House",
+      "description": "Внушающий стеклянный комлпекс в Лондоне, который объединяет деревянные и стеклянные фрагменты в один современный стиль.",
+      "imageFirst": "https://scx2.b-cdn.net/gfx/news/2018/workprogress.jpg",
+      "imageSecond": "https://images.mansionglobal.com/im-706437?width=1280&size=1",
+      "id": "9"
+    },
+    {
+      "name": "Milstein Hall",
+      "description": "Жилой комплекс в Итаке, который превращает жилые помещения в открытые и просторные пространства с большим количеством горизонтального света.",
+      "imageFirst": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkcYHHaLqwF-XLVrv5pFGOb5xFREyvUqovtuFKalMc&s",
+      "imageSecond": "https://cdn.ca.emap.com/wp-content/uploads/sites/12/2015/09/OMA_Milstein_Hall_University_Ithaca_New_York_3_289101250-1024x713.jpg",
+      "id": "10"
+    },
+    {
+      "name": "Langoor Mews",
+      "description": "Небольшой комплекс из шести домов в Лондоне, который предлагает современный подход к стилистическим аспектам традиционных лондонских двориков.",
+      "imageFirst": "https://www.lurotbrand.co.uk/wp-content/uploads/2023/02/Junction-Mews-49-1-aspect-ratio-16-9-1800x1012.jpg",
+      "imageSecond": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKSVPLJH13PnKWAqaBWI8gtC1aN8gsm44qjd7gLwAUA&s",
+      "id": "11"
+    },
+    {
+      "name": "Rødovre Skyscraper",
+      "description": "Небоскреб в Копенгагене, который притягивает внимание своей причудливой во внешнем виде и внутренней функциональности.",
+      "imageFirst": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1490800869828-a00247402454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "12"
+    },
+    {
+      "name": "Marina Bay Sands",
+      "description": "Известный небоскреб в Сингапуре, который обладает уникальным дизайном с тремя выступающими частями и разнообразными развлекательными возможностями, включая казино, рестораны, спа и магазины.",
+      "imageFirst": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1352&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1516422641841-cd9803ab02c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "13"
+    },
+    {
+      "name": "The Shard",
+      "description": "Высочайший небоскреб в Лондоне, который имеет уникальную форму пирамиды и располагает ресторанами и барами на верхних этажах с захватывающим видом на город.",
+      "imageFirst": "https://plus.unsplash.com/premium_photo-1680806490620-b5bb8b693f89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1562605493-83cee50cdc03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80",
+      "id": "14"
+    },
+    {
+      "name": "Burj Khalifa",
+      "description": "Самый высокий небоскреб в мире, находящийся в Дубае, обладает уникальным дизайном с заостренной формой и многочисленными развлекательными возможностями, включая отели, рестораны и наблюдательную площадку на вершине здания.",
+      "imageFirst": "https://plus.unsplash.com/premium_photo-1672330527802-fe0edc0ec12c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "imageSecond": "https://images.unsplash.com/photo-1597659840241-37e2b9c2f55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      "id": "15"
+    }
+  ],
+  [
+    {
+      "image": "https://images.unsplash.com/photo-1543301571-b94000185b26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": "1"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1655710130839-4a019a64efb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": "2"
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Absolute_Towers_Mississauga._South-west_view.jpg",
+      "id": "3"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1680011196321-28b32356544b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": "4"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1667230227250-f3bb1bf18d9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "5"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1682034611281-c60b0dea2ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+      "id": "6"
+    },
+    {
+      "image": "https://api.europeana.eu/thumbnail/v3/400/c7f8d70ff6a0f12651de6828f87db6f8",
+      "id": "7"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1565599573128-ae3ef5c9f478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "8"
+    },
+    {
+      "image": "https://scx2.b-cdn.net/gfx/news/2018/workprogress.jpg",
+      "id": 9
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkcYHHaLqwF-XLVrv5pFGOb5xFREyvUqovtuFKalMc&s",
+      "id": 10
+    },
+    {
+      "image": "https://www.lurotbrand.co.uk/wp-content/uploads/2023/02/Junction-Mews-49-1-aspect-ratio-16-9-1800x1012.jpg",
+      "id": "11"
+    },
+    {
+      "id": "12",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKSVPLJH13PnKWAqaBWI8gtC1aN8gsm44qjd7gLwAUA&s"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1352&q=80",
+      "id": "13"
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1680806490620-b5bb8b693f89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": "14"
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1672330527802-fe0edc0ec12c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": "15"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1597659840241-37e2b9c2f55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      "id": "16"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1562605493-83cee50cdc03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80",
+      "id": "17"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1516422641841-cd9803ab02c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": "18"
+    },
+    {
+      "image": "https://cdn.ca.emap.com/wp-content/uploads/sites/12/2015/09/OMA_Milstein_Hall_University_Ithaca_New_York_3_289101250-1024x713.jpg",
+      "id": "19"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1576443730831-02377debbff3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1446&q=80",
+      "id": "20"
+    }
+  ]
+]
