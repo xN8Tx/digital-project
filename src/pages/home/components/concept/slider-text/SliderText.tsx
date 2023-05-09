@@ -12,12 +12,13 @@ export default function SliderText({ currentIndex }: CurrentIndexType) {
 
   return (
     <div className="home-slider__text">
-      {sliderArray.map((route, index) => {
-        const firstWord: string = route.name.split(' ').shift()!;
-        const lastWord: string = route.name.split(' ').pop()!;
+      {sliderArray.map((slider, index) => {
+        const firstWord: string = slider.name.split(' ').shift()!;
+        const lastWord: string = slider.name.split(' ').pop()!;
 
-        if (currentIndex === index) return <SliderTextItem firstWord={firstWord} lastWord={lastWord} active />;
-        return <SliderTextItem firstWord={firstWord} lastWord={lastWord} active={false} />;
+        if (currentIndex === index)
+          return <SliderTextItem key={slider.id} firstWord={firstWord} lastWord={lastWord} active />;
+        return <SliderTextItem key={slider.id} firstWord={firstWord} lastWord={lastWord} active={false} />;
       })}
     </div>
   );

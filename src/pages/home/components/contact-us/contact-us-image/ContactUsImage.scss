@@ -1,0 +1,12 @@
+.home-contact__image {
+  width: calc(100% - 40px);
+  height: 392px;
+
+  &_image {
+    @apply w-full h-full object-cover;
+  }
+
+  @media (width < 768px) {
+    @apply hidden;
+  }
+}

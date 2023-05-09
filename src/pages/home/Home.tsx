@@ -3,10 +3,11 @@ import { useProjectsStore } from '../../store/projects-store';
 
 import Concept from './components/concept/Concept';
 import AboutUs from './components/about-us/AboutUs';
-
-import './Home.scss';
 import Goals from './components/goals/Goals';
 import Projects from './components/projects/Projects';
+import ContactUs from './components/contact-us/ContactUs';
+
+import './Home.scss';
 
 export default function Home() {
   const loading = useProjectsStore((state) => state.loading);
@@ -25,6 +26,7 @@ export default function Home() {
           <AboutUs />
           <Goals />
           <Projects />
+          <ContactUs />
         </div>
       )}
     </main>

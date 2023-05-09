@@ -1,3 +1,4 @@
 .BigMainInput {
-  height: 45px;
+  @apply main-input;
+  min-height: 150px;
 }

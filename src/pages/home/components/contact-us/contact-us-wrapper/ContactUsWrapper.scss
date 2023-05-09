@@ -1,0 +1,6 @@
+.home-contact__wrapper {
+  &_body {
+    @apply flex;
+    gap: 30px;
+  }
+}

@@ -1,9 +1,10 @@
 .ThickButton {
-  @apply bg-dark btn-thick;
-  
+  @apply btn-thick;
+  background-color: #333333 !important;
+
   @media (hover: hover) {
     &:hover {
-      @apply bg-black;
+      background-color: #2c2c2c !important;
     }
   }
 }

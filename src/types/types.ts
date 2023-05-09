@@ -34,7 +34,7 @@ interface TextUIProps extends ChildrenProps {}
 
 interface InputUIProps {
   placeholder: string;
-  type: string;
+  type?: string;
   value: string;
   onChange: (event: any) => void;
 }
@@ -45,6 +45,20 @@ interface ButtonUIProps extends ChildrenProps {
 
 interface LinkProps extends ChildrenProps {
   to: string;
+}
+
+interface ContactFormProps {
+  name: string;
+  phoneNumber: string;
+  email: string;
+  product: string;
+  message: string;
+
+  setName: (name: string) => void;
+  setEmail: (email: string) => void;
+  setPhoneNumber: (phoneNumber: string) => void;
+  setProduct: (product: string) => void;
+  setMessage: (message: string) => void;
 }
 
 export type {
@@ -58,4 +72,5 @@ export type {
   StoreType,
   SliderTypes,
   CurrentIndexType,
+  ContactFormProps,
 };

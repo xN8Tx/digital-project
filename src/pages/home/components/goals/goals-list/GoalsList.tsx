@@ -13,7 +13,7 @@ export default function GoalsList() {
   return (
     <div className="home-goals__list">
       {goals.map((goal, index) => (
-        <GoalsItem goal={goal} index={index + 1} />
+        <GoalsItem key={index} goal={goal} index={index + 1} />
       ))}
     </div>
   );
