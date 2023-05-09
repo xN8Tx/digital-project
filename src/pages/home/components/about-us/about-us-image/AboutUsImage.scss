@@ -4,4 +4,8 @@
   & > img {
     @apply w-full h-full object-cover;
   }
+
+  @media (width < 768px) {
+    @apply hidden;
+  }
 }

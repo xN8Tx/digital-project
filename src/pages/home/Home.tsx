@@ -6,6 +6,7 @@ import AboutUs from './components/about-us/AboutUs';
 
 import './Home.scss';
 import Goals from './components/goals/Goals';
+import Projects from './components/projects/Projects';
 
 export default function Home() {
   const loading = useProjectsStore((state) => state.loading);
@@ -23,6 +24,7 @@ export default function Home() {
           <Concept />
           <AboutUs />
           <Goals />
+          <Projects />
         </div>
       )}
     </main>

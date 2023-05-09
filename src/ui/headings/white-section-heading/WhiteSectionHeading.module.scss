@@ -1,0 +1,7 @@
+.WhiteSectionHeading {
+  @apply text-3xl text-white font-bold;
+
+  @media (width < 428px) {
+    font-size: 54px;
+  }
+}

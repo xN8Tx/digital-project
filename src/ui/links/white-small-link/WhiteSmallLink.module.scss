@@ -1,0 +1,11 @@
+.WhiteSmallLink {
+  @apply text-xss font-normal text-white flex items-center gap-3 uppercase transition-all;
+
+  letter-spacing: 0.2em;
+
+  @media (hover: hover) {
+    &:hover {
+      @apply text-grey;
+    }
+  }
+}

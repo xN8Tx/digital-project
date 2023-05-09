@@ -1,14 +1,13 @@
 import React from 'react';
 
+import ProjectList from '../projects-list/ProjectList';
 import LightSectionHeading from '../../../../../ui/headings/light-section-heading/LightSectionHeading';
 
-import GoalsList from '../goals-list/GoalsList';
-
-export default function GoalsWrapper() {
+export default function ProjectsWrapper() {
   return (
     <div className="home-section">
-      <LightSectionHeading>Наши цели</LightSectionHeading>
-      <GoalsList />
+      <LightSectionHeading>Наши проекты</LightSectionHeading>
+      <ProjectList />
     </div>
   );
 }

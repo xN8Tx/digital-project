@@ -1,0 +1,22 @@
+.home-projects__item {
+  @apply h-56 relative flex items-center justify-center;
+
+  width: calc(50% - 15px);
+
+  &_image {
+    @apply absolute z-0 w-full h-full object-cover;
+  }
+
+  &_text {
+    @apply w-full h-full pl-10 relative z-10 flex flex-col items-start justify-center gap-2 opacity-0 transition-all;
+    background-color: #333333b8;
+
+    &:hover {
+      @apply opacity-100;
+    }
+  }
+
+  @media (width < 768px) {
+    width: 100%;
+  }
+}
