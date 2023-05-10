@@ -1,0 +1,5 @@
+.error {
+  @apply flex items-center justify-center bg-white;
+  width: 100%;
+  height: calc(100vh - 100px);
+}

@@ -1,0 +1,11 @@
+.error__wrapper {
+  @apply flex flex-col items-center gap-11;
+}
+
+.error__text {
+  @apply flex items-center gap-6 max-w-3xl;
+
+  @media (max-width: 768px) {
+    @apply flex-col max-w-none text-center;
+  }
+}
