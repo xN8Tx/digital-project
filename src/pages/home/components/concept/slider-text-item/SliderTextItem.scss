@@ -15,7 +15,7 @@
     @apply text-grey font-light;
   }
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     & {
       @apply text-white;
     }

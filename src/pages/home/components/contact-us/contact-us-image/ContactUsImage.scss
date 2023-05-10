@@ -6,7 +6,7 @@
     @apply w-full h-full object-cover;
   }
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     @apply hidden;
   }
 }

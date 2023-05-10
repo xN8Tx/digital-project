@@ -4,7 +4,7 @@
   width: 400px;
   animation: sliderAnimations 1s linear;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     & {
       @apply w-full justify-center absolute z-20 text-center;
       background-color: rgba(0, 0, 0, 0.265);

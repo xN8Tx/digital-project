@@ -1,7 +1,7 @@
 .home-slider {
   @apply relative w-full h-full flex items-center gap-16 pb-5;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     @apply pb-0;
   }
 }

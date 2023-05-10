@@ -5,7 +5,7 @@
     @apply flex items-start justify-between py-14;
     min-height: 227px;
 
-    @media (width < 825px) {
+    @media (max-width: 825px) {
       & {
         @apply flex flex-col items-center justify-center gap-10 text-center;
       }
@@ -28,7 +28,7 @@
     }
   }
 
-  @media (width < 825px) {
+  @media (max-width: 825px) {
     & {
       @apply justify-center;
     }

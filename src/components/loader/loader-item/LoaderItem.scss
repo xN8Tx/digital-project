@@ -1,0 +1,88 @@
+.loader__wrapper {
+  @apply relative;
+  width: 200px;
+  height: 200px;
+}
+
+.loader__item {
+  @apply absolute block bg-dark;
+  width: 100px;
+  height: 100px;
+
+  &.first {
+    @apply top-0 left-0;
+    animation: first 1.8s ease infinite;
+  }
+
+  &.second {
+    @apply top-0 right-0;
+    animation: second 1.8s ease infinite;
+  }
+
+  &.third {
+    @apply bottom-0 left-0;
+    animation: third 1.8s ease infinite;
+  }
+
+  &.fourth {
+    @apply bottom-0 right-0;
+    animation: fourth 1.8s ease infinite;
+  }
+
+  @keyframes first {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotate(120deg) translate(0, 100px);
+    }
+    50% {
+      transform: rotate(240deg) translate(100px, 100px);
+    }
+    100% {
+      transform: rotate(360deg) translate(100px, 0);
+    }
+  }
+  @keyframes second {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotate(120deg) translate(-100px, 0);
+    }
+    50% {
+      transform: rotate(240deg) translate(-100px, 100px);
+    }
+    100% {
+      transform: rotate(360deg) translate(0, 100px);
+    }
+  }
+  @keyframes third {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotate(120deg) translate(100px, 0);
+    }
+    50% {
+      transform: rotate(240deg) translate(100px, -100px);
+    }
+    100% {
+      transform: rotate(360deg) translate(0, -100px);
+    }
+  }
+  @keyframes fourth {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotate(120deg) translate(0, -100px);
+    }
+    50% {
+      transform: rotate(240deg) translate(-100px, -100px);
+    }
+    100% {
+      transform: rotate(360deg) translate(-100px, 0);
+    }
+  }
+}

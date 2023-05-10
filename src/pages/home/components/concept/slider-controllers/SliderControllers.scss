@@ -1,7 +1,7 @@
 .home-slider__controls {
   @apply absolute left-0 bottom-5 flex flex-col items-center gap-2;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     & {
       @apply w-full z-40 bottom-20 flex-row justify-between;
     }

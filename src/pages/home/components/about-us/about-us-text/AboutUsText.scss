@@ -3,7 +3,7 @@
 
   max-width: 400px;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     @apply items-center text-center;
   }
 }

@@ -7,7 +7,7 @@
     @apply text-grey font-extrabold;
     font-size: 140px;
 
-    @media (width < 768px) {
+    @media (max-width: 768px) {
       font-size: 100px;
     }
   }

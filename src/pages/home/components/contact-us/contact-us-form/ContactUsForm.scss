@@ -2,7 +2,7 @@
   @apply flex flex-col gap-6;
   max-width: 390px;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     @apply items-center;
   }
 }

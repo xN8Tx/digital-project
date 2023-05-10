@@ -15,7 +15,7 @@
     }
   }
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     & {
       @apply flex items-center justify-center;
     }
