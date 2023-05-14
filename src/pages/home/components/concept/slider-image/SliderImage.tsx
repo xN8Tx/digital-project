@@ -1,5 +1,5 @@
 import React from 'react';
-import { useProjectsStore } from '../../../../../store/projects-store';
+import { useHomeStore } from '../../../../../store/home-store';
 
 import { CurrentIndexType } from '../../../../../types/types';
 
@@ -8,7 +8,7 @@ import SliderImageItem from '../slider-image-item/SliderImageItem';
 import './SliderImage.scss';
 
 export default function SliderImage({ currentIndex }: CurrentIndexType) {
-  const sliderArray = useProjectsStore((store) => store.entities);
+  const sliderArray = useHomeStore((store) => store.entities);
 
   return (
     <div className="home-slider__image">

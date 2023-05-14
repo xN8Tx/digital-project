@@ -2,8 +2,8 @@ import React from 'react';
 
 import Certificate from '../pages/certificate';
 import Contacts from '../pages/contacts';
-import Error from '../pages/error';
-import Gallery from '../pages/gallery';
+import Error from '../pages/error/Error';
+import Gallery from '../pages/gallery/Gallery';
 import Home from '../pages/home/Home';
 import Project from '../pages/project';
 import Projects from '../pages/projects';

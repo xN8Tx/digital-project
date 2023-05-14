@@ -94,6 +94,12 @@ module.exports = {
           borderColor: theme('colors.green'),
           borderRadius: '5px',
         },
+        '.page-wrapper': {
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '60px',
+          marginBottom: '100px',
+        },
       });
     }),
   ],

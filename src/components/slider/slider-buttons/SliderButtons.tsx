@@ -8,12 +8,12 @@ import SliderButton from '../slider-button/SliderButton';
 import './SliderButtons.scss';
 
 interface SliderButtonsProps extends SliderTypes {
-  sliderArray: unknown[];
+  maxIndex: number;
 }
 
-export default function SliderButtons({ sliderArray, currentIndex, setCurrentIndex }: SliderButtonsProps) {
-  const onNextButtonClick = () => goToNext({ sliderArray, currentIndex, setCurrentIndex });
-  const onPreviousButtonClick = () => goToPrevious({ sliderArray, currentIndex, setCurrentIndex });
+export default function SliderButtons({ maxIndex, currentIndex, setCurrentIndex }: SliderButtonsProps) {
+  const onNextButtonClick = () => goToNext({ maxIndex, currentIndex, setCurrentIndex });
+  const onPreviousButtonClick = () => goToPrevious({ maxIndex, currentIndex, setCurrentIndex });
 
   return (
     <div className="slider__buttons">

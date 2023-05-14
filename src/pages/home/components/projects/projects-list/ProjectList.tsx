@@ -1,12 +1,12 @@
 import React from 'react';
-import { useProjectsStore } from '../../../../../store/projects-store';
+import { useHomeStore } from '../../../../../store/home-store';
 
 import ProjectItem from '../projects-item/ProjectItem';
 
 import './ProjectList.scss';
 
 export default function ProjectList() {
-  const projects = useProjectsStore((state) => state.entities);
+  const projects = useHomeStore((state) => state.entities);
 
   return (
     <div className="home-project__list">

@@ -1,0 +1,9 @@
+.gallery__list {
+  @apply w-full flex flex-wrap gap-8;
+
+  &_row {
+    @apply flex;
+    width: calc(20% - 32px);
+    min-width: 210px;
+  }
+}

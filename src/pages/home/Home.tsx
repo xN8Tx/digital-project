@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react';
-import { useProjectsStore } from '../../store/projects-store';
+
+import { useHomeStore } from '../../store/home-store';
 
 import Concept from './components/concept/Concept';
 import AboutUs from './components/about-us/AboutUs';
 import Goals from './components/goals/Goals';
 import Projects from './components/projects/Projects';
 import ContactUs from './components/contact-us/ContactUs';
-
-import './Home.scss';
 import Loader from '../../components/loader/Loader';
 import Error from '../../components/error/Error';
 
+import './Home.scss';
+
 export default function Home() {
-  const loading = useProjectsStore((state) => state.loading);
-  const fetchProjects = useProjectsStore((state) => state.fetchData);
+  const loading = useHomeStore((state) => state.loading);
+  const fetchProjects = useHomeStore((state) => state.fetchData);
 
   useEffect(() => {
     if (loading === 'idle') fetchProjects(1);
@@ -21,17 +22,17 @@ export default function Home() {
   }, [fetchProjects]);
 
   return (
-    <main>
+    <main className="wrapper">
       {loading === 'loading' && <Loader />}
       {loading === 'error' && <Error />}
       {loading === 'succeeded' && (
-        <div className="wrapper">
+        <>
           <Concept />
           <AboutUs />
           <Goals />
           <Projects />
           <ContactUs />
-        </div>
+        </>
       )}
     </main>
   );

@@ -1,16 +1,29 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-import { loadingObserver } from '../api/api';
-import { ProjectType, StoreType } from '../types/types';
+import { http, loadingObserver } from '../api/api';
+import { ProjectType, StoreWithPagination } from '../types/types';
 
-const useProjectsStore = create<StoreType<ProjectType[]>>()(
-  devtools((set) => ({
+const useProjectsStore = create<StoreWithPagination<ProjectType[]>>()(
+  devtools((set, get) => ({
     entities: [],
     loading: 'idle',
-    fetchData: (page) => {
-      loadingObserver<ProjectType[]>(set, `projects?page=${page}&limit=5`);
+    fetchData: () => {
+      const fetchData = async () => {
+        const page = get().currentPage;
+        const data = await http<ProjectType[]>(`projects?page=${page}&limit=5`);
+
+        set((state) => ({ entities: [...state.entities, ...data], loading: 'succeeded' }));
+      };
+
+      loadingObserver(set, fetchData);
     },
+    maxPage: 3,
+    currentPage: 1,
+    setCurrentPage: (currentPage) => {
+      set({ currentPage });
+    },
+    qntSlides: 5,
   })),
 );
 

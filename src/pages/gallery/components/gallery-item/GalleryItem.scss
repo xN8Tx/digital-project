@@ -1,0 +1,8 @@
+.gallery__item {
+  width: 210px;
+  height: 260px;
+
+  &_photo {
+    @apply w-full h-full object-cover;
+  }
+}

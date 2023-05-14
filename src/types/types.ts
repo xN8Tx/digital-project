@@ -23,7 +23,14 @@ interface ProjectType {
 interface StoreType<T> {
   entities: T;
   loading: string;
-  fetchData: (value: number) => void;
+  fetchData: (value?: number) => void;
+}
+
+interface StoreWithPagination<T> extends StoreType<T> {
+  maxPage: number;
+  currentPage: number;
+  setCurrentPage: (currentPage: number) => void;
+  qntSlides: number;
 }
 
 interface ChildrenProps {
@@ -73,4 +80,5 @@ export type {
   SliderTypes,
   CurrentIndexType,
   ContactFormProps,
+  StoreWithPagination,
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useProjectsStore } from '../../../../../store/projects-store';
+import { useHomeStore } from '../../../../../store/home-store';
 import { SliderTypes } from '../../../../../types/types';
 
 import SliderButtons from '../../../../../components/slider/slider-buttons/SliderButtons';
@@ -9,13 +9,13 @@ import SliderCount from '../../../../../components/slider/slider-count/SliderCou
 import './SliderControllers.scss';
 
 export default function SliderControllers({ currentIndex, setCurrentIndex }: SliderTypes) {
-  const sliderArray = useProjectsStore((state) => state.entities);
-  const maxIndex = sliderArray.length;
+  const sliderArray = useHomeStore((state) => state.entities);
+  const maxIndex = sliderArray.length - 1;
 
   return (
     <div className="home-slider__controls">
-      <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} sliderArray={sliderArray} />
-      <SliderCount currentIndex={currentIndex} maxIndex={maxIndex} />
+      <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} maxIndex={maxIndex} />
+      <SliderCount currentIndex={currentIndex + 1} maxIndex={maxIndex + 1} />
     </div>
   );
 }

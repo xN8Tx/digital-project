@@ -6,12 +6,17 @@ import DarkThickLink from '../../../ui/links/dark-thick-link/DarkThickLink';
 
 import './ErrorWrapper.scss';
 
-export default function ErrorWrapper() {
+interface ErrorWrapperProps {
+  code: number;
+  message: string;
+}
+
+export default function ErrorWrapper({ code, message }: ErrorWrapperProps) {
   return (
     <div className="error__wrapper">
       <div className="error__text">
-        <DarkSectionHeading>404</DarkSectionHeading>
-        <LightSectionHeading>Такой страницы не существует</LightSectionHeading>
+        <DarkSectionHeading>{code}</DarkSectionHeading>
+        <LightSectionHeading>{message}</LightSectionHeading>
       </div>
       <DarkThickLink to="/">Домой</DarkThickLink>
     </div>

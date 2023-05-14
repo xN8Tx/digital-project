@@ -8,18 +8,17 @@ const http = async <T>(endpoint: string): Promise<T> => {
 };
 
 // Loading observer to state
-interface LoadingType<T> {
+interface LoadingType {
   loading: string;
-  entities?: T;
 }
 
-type SetType<T> = ({ loading }: LoadingType<T>) => void;
+type SetType = ({ loading }: LoadingType) => void;
+type FetchDataType = () => Promise<void>;
 
-const loadingObserver = async <T>(set: SetType<T>, url: string) => {
+const loadingObserver = async (set: SetType, fetchData: FetchDataType) => {
   try {
     set({ loading: 'loading' });
-    const data = await http<T>(url);
-    set({ entities: data, loading: 'succeeded' });
+    await fetchData();
   } catch (err) {
     set({ loading: 'error' });
   }
