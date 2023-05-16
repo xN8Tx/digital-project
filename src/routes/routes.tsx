@@ -6,7 +6,7 @@ import Error from '../pages/error/Error';
 import Gallery from '../pages/gallery/Gallery';
 import Home from '../pages/home/Home';
 import Project from '../pages/project';
-import Projects from '../pages/projects';
+import Projects from '../pages/projects/Projects';
 
 interface IRoutes {
   name: string;

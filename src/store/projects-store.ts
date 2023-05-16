@@ -20,8 +20,17 @@ const useProjectsStore = create<StoreWithPagination<ProjectType[]>>()(
     },
     maxPage: 3,
     currentPage: 1,
-    setCurrentPage: (currentPage) => {
-      set({ currentPage });
+    setCurrentPage: (newPage) => {
+      const { qntSlides, entities, fetchData } = get();
+
+      // eslint-disable-next-line no-param-reassign
+      if (newPage === 0) newPage = 1;
+
+      set({ currentPage: newPage });
+
+      if (entities.length < qntSlides * newPage) {
+        fetchData();
+      }
     },
     qntSlides: 5,
   })),

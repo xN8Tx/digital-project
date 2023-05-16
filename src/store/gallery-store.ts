@@ -25,9 +25,10 @@ const useGalleryStore = create<StoreWithPagination<GalleryType[]>>()(
 
       // eslint-disable-next-line no-param-reassign
       if (newPage === 0) newPage = 1;
+
       set({ currentPage: newPage });
+
       if (entities.length < qntSlides * newPage) {
-        console.log(newPage);
         fetchData();
       }
     },

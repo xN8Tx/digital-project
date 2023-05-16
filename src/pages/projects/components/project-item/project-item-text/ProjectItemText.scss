@@ -1,0 +1,11 @@
+.project__item_text {
+  max-width: 400px;
+  height: 430px;
+
+  & > h3 {
+    margin-bottom: 30px;
+  }
+  & > p {
+    margin-bottom: 60px;
+  }
+}

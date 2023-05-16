@@ -1,0 +1,7 @@
+.project_item {
+  @apply flex gap-7;
+
+  @media (max-width: 768px) {
+    @apply flex-col;
+  }
+}
