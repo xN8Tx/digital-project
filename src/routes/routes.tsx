@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Certificate from '../pages/certificate';
+import Certificate from '../pages/certificate/Certificate';
 import Contacts from '../pages/contacts';
 import Error from '../pages/error/Error';
 import Gallery from '../pages/gallery/Gallery';
