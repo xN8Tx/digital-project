@@ -1,0 +1,10 @@
+.modal {
+  @apply hidden absolute w-full top-0 left-0 items-center justify-center;
+
+  height: calc(100vh);
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &[data-close='true'] {
+    @apply flex;
+  }
+}

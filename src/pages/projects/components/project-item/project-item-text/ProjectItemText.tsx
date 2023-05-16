@@ -17,7 +17,7 @@ export default function ProjectItemText({ id, name, description }: ProjectItemTe
     <div className="project__item_text">
       <ArticleHeading>{name}</ArticleHeading>
       <SmallArticleText>{description}</SmallArticleText>
-      <WhiteThickLink to={`project/${id}`}>Смотреть</WhiteThickLink>
+      <WhiteThickLink to={`/project/${id}`}>Смотреть</WhiteThickLink>
     </div>
   );
 }

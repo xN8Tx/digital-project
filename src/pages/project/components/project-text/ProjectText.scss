@@ -1,0 +1,9 @@
+.project__text {
+  @apply flex flex-wrap-reverse gap-8;
+
+  &_photo {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}

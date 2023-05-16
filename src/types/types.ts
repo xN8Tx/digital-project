@@ -23,7 +23,7 @@ interface ProjectType {
 interface StoreType<T> {
   entities: T;
   loading: string;
-  fetchData: (value?: number) => void;
+  fetchData: (value?: number | string) => void;
 }
 
 interface StoreWithPagination<T> extends StoreType<T> {
@@ -68,6 +68,11 @@ interface ContactFormProps {
   setMessage: (message: string) => void;
 }
 
+interface ModalProps {
+  isModalOpen: boolean;
+  setIsModalOpen: (isModalOpen: boolean) => void;
+}
+
 export type {
   ChildrenProps,
   TextUIProps,
@@ -81,4 +86,5 @@ export type {
   CurrentIndexType,
   ContactFormProps,
   StoreWithPagination,
+  ModalProps,
 };

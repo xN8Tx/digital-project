@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Certificate from '../pages/certificate/Certificate';
-import Contacts from '../pages/contacts';
+import Contacts from '../pages/contacts/Contacts';
 import Error from '../pages/error/Error';
 import Gallery from '../pages/gallery/Gallery';
 import Home from '../pages/home/Home';
-import Project from '../pages/project';
+import Project from '../pages/project/Project';
 import Projects from '../pages/projects/Projects';
 
 interface IRoutes {
@@ -49,7 +49,7 @@ const routes: IRoutes[] = [
 
   {
     name: 'Проект',
-    path: '/projects/*',
+    path: '/project/:id',
     element: <Project />,
     isShowed: false,
   },
