@@ -16,7 +16,7 @@ interface ProjectsItemProps {
 
 export default function ProjectsItem({ id, name, description, src }: ProjectsItemProps) {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 0.5, once: true }} className="project_item">
+    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="project_item">
       <MProjectItemImage id={id} src={src} variants={imageAnimation} custom={1} />
       <MProjectItemText id={id} name={name} description={description} variants={textAnimation} custom={1} />
     </motion.div>
