@@ -12,7 +12,10 @@ interface IHeaderNavListProps {
 }
 
 export default function HeaderNavList({ isBurgerActive, setIsBurgerActive }: IHeaderNavListProps) {
-  const onLinkClick = () => setIsBurgerActive(false);
+  const onLinkClick = () => {
+    setIsBurgerActive(false);
+    document.body.setAttribute('data-lock', 'false');
+  };
 
   return (
     <ul className="header__nav_list" data-burger={isBurgerActive}>

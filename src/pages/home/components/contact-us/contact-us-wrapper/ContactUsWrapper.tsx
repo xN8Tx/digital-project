@@ -10,7 +10,7 @@ import { textAnimation } from '../../../../../animation/animations';
 
 export default function ContactUsWrapper() {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 1, once: true }} className="home-section">
+    <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 0.5, once: true }} className="home-section">
       <MLightSectionHeading variants={textAnimation} custom={1}>
         Связаться с нами
       </MLightSectionHeading>

@@ -11,7 +11,7 @@ export default function AboutUsWrapper() {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 1, once: true }}
+      viewport={{ amount: 0.5, once: true }}
       className="home-about-us__wrapper"
     >
       <AboutUsImage />
