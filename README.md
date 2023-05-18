@@ -28,4 +28,4 @@ ____
 
 ____
 
-*P.S Pet project
+ *P.S Pet project*
