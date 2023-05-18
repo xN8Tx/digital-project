@@ -4,7 +4,7 @@
   width: 100%;
 
   &_img {
-    @apply absolute w-full h-full object-cover transition-all;
+    @apply absolute transition-all;
 
     &[data-active='false'] {
       opacity: 0;

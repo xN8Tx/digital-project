@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import LazyImg from '../../../../../ui/images/LazyImg';
+
 import './ProjectItemImage.scss';
 
 interface ProjectItemImageProps {
@@ -10,8 +12,8 @@ interface ProjectItemImageProps {
 
 export default function ProjectItemImage({ id, src }: ProjectItemImageProps) {
   return (
-    <Link to={`/project/${id}`} className="project__item_image">
-      <img src={src} alt="" />
+    <Link to={`/project/${id}`} className="project__item_container">
+      <LazyImg src={src} alt={`${id}`} className="project__item_image" />
     </Link>
   );
 }

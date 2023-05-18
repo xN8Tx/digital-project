@@ -1,6 +1,8 @@
 import React from 'react';
 import { useProjectStore } from '../../../../store/project-store';
 
+import LazyImg from '../../../../ui/images/LazyImg';
+
 import './ProjectCover.scss';
 
 export default function ProjectCover() {
@@ -8,7 +10,7 @@ export default function ProjectCover() {
 
   return (
     <div className="project__cover">
-      <img src={imageFirst} alt="" />
+      <LazyImg src={imageFirst} alt="Обложка" className="project__cover_image" />
     </div>
   );
 }

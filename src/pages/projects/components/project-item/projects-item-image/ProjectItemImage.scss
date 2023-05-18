@@ -1,11 +1,7 @@
-.project__item_image {
+.project__item_container {
   @apply h-full;
   width: 600px;
   height: 430px;
-
-  & > img {
-    @apply w-full h-full object-cover;
-  }
 
   @media (max-width: 768px) {
     @apply w-full;

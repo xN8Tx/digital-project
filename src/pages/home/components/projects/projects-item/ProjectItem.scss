@@ -4,7 +4,7 @@
   width: calc(50% - 15px);
 
   &_image {
-    @apply absolute z-0 w-full h-full object-cover;
+    @apply absolute z-0;
   }
 
   &_text {

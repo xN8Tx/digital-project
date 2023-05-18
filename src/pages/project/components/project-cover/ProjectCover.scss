@@ -1,8 +1,4 @@
 .project__cover {
   @apply w-full;
   height: 435px;
-
-  & > img {
-    @apply w-full h-full object-cover;
-  }
 }

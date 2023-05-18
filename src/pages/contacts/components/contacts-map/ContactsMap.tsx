@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import './ContactsMap.scss';
 
 export default function ContactsMap() {
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
+  const onIframeLoaded = () => setIsLoaded(true);
+
   return (
-    <div>
+    <div className="contacts__map" data-load={isLoaded}>
       <iframe
         title="map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A05f3bc49eed2dfbc1a2d865db34f9750814d28f3e0f7fcca76d3faec4fc6b560&amp;source=constructor"
-        width="617"
-        height="503"
+        className="contacts__map_iframe"
+        onLoad={onIframeLoaded}
       />
     </div>
   );

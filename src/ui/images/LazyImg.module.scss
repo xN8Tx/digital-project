@@ -1,0 +1,31 @@
+.container {
+  @apply block w-full h-full overflow-hidden relative bg-white border-none;
+
+  &[data-load='false']::before {
+    @apply w-full h-full block absolute left-0 top-0;
+    content: ' ';
+    background: rgba(54, 54, 54, 0.41);
+    backdrop-filter: blur(50px);
+    animation: load 1s linear alternate infinite;
+  }
+
+  &[data-load='false'] > img {
+    opacity: 0;
+  }
+  &[data-load='true'] > img {
+    opacity: 1;
+  }
+}
+
+.image {
+  @apply w-full h-full object-cover;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

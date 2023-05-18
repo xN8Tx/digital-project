@@ -4,6 +4,7 @@ import WhiteSectionHeading from '../../../../../ui/headings/white-section-headin
 import WhiteSmallLink from '../../../../../ui/links/white-small-link/WhiteSmallLink';
 
 import './ProjectItem.scss';
+import LazyImg from '../../../../../ui/images/LazyImg';
 
 interface ProjectItemProps {
   id: number;
@@ -14,7 +15,7 @@ interface ProjectItemProps {
 export default function ProjectItem({ id, name, image }: ProjectItemProps) {
   return (
     <div className="home-projects__item">
-      <img src={image} alt="project" className="home-projects__item_image" />
+      <LazyImg src={image} alt="project" className="home-projects__item_image" />
       <div className="home-projects__item_text">
         <WhiteSectionHeading>{name}</WhiteSectionHeading>
         <WhiteSmallLink to={`/project/${id}`}>Подробнее</WhiteSmallLink>
