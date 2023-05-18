@@ -1,6 +1,6 @@
 .DarkThickLink {
-  @apply btn-thick bg-dark;
-  
+  @apply btn-thick bg-dark transition-none;
+
   @media (hover: hover) {
     &:hover {
       @apply bg-black;

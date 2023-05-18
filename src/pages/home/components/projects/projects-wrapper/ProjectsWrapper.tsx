@@ -1,15 +1,19 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import ProjectList from '../projects-list/ProjectList';
-import LightSectionHeading from '../../../../../ui/headings/light-section-heading/LightSectionHeading';
-import DarkThickLink from '../../../../../ui/links/dark-thick-link/DarkThickLink';
+import { MLightSectionHeading } from '../../../../../ui/headings/light-section-heading/LightSectionHeading';
+import { MDarkThickLink } from '../../../../../ui/links/dark-thick-link/DarkThickLink';
+import { textAnimation } from '../../../../../animation/animations';
 
 export default function ProjectsWrapper() {
   return (
-    <div className="home-section">
-      <LightSectionHeading>Наши проекты</LightSectionHeading>
+    <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 1, once: true }} className="home-section">
+      <MLightSectionHeading variants={textAnimation}>Наши проекты</MLightSectionHeading>
       <ProjectList />
-      <DarkThickLink to="/projects">Все проекты</DarkThickLink>
-    </div>
+      <MDarkThickLink to="/projects" variants={textAnimation}>
+        Все проекты
+      </MDarkThickLink>
+    </motion.div>
   );
 }

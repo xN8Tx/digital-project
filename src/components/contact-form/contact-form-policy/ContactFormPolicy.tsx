@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SmallInfoText from '../../../ui/text/small-info-text/SmallInfoText';
+import { SmallInfoText } from '../../../ui/text/small-info-text/SmallInfoText';
 
 import Tick from '../../../assets/svg/Tick.svg';
 

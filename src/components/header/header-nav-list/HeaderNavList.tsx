@@ -8,15 +8,18 @@ import './HeaderNavList.scss';
 
 interface IHeaderNavListProps {
   isBurgerActive: boolean;
+  setIsBurgerActive: (isBurgerActive: boolean) => void;
 }
 
-export default function HeaderNavList({ isBurgerActive }: IHeaderNavListProps) {
+export default function HeaderNavList({ isBurgerActive, setIsBurgerActive }: IHeaderNavListProps) {
+  const onLinkClick = () => setIsBurgerActive(false);
+
   return (
     <ul className="header__nav_list" data-burger={isBurgerActive}>
       {routes.map((route, index) => {
         if (route.isShowed) {
           return (
-            <HeaderNavItem key={index} path={route.path} isBurgerActive={isBurgerActive}>
+            <HeaderNavItem key={index} path={route.path} isBurgerActive={isBurgerActive} onClick={onLinkClick}>
               {route.name}
             </HeaderNavItem>
           );

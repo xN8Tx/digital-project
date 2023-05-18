@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import { motion } from 'framer-motion';
 
 import { TextUIProps } from '../../../types/types';
 
 import style from './LightSectionHeading.module.scss';
 
-export default function LightSectionHeading({ children }: TextUIProps) {
-  return <h3 className={style.LightSectionHeading}>{children}</h3>;
-}
+export const LightSectionHeading = forwardRef<HTMLHeadingElement, TextUIProps>(({ children }, ref) => (
+  <h3 ref={ref} className={style.LightSectionHeading}>
+    {children}
+  </h3>
+));
+
+export const MLightSectionHeading = motion(LightSectionHeading);

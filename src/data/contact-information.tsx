@@ -17,9 +17,9 @@ type ContactsInformationType = {
 type SocialMediaInformationType = Omit<ContactsInformationType, 'text'>;
 
 const contactsInformation: ContactsInformationType[] = [
-  { text: '100000, Республика  Казахстан, г.Караганда, ул.Телевизионная 10', to: '/', image: <LocationSvg /> },
-  { text: '+7 (701) 77 76 811', to: '/', image: <PhoneSvg /> },
-  { text: 'Galym.sultanov@mail.ru', to: '/', image: <EmailSvg /> },
+  { text: 'г. Москва, Фролов переулок 2', to: '/', image: <LocationSvg /> },
+  { text: '+7 (999) 888-77-66', to: '/', image: <PhoneSvg /> },
+  { text: 'digital@mail.ru', to: '/', image: <EmailSvg /> },
 ];
 
 const socialMediaInformation: SocialMediaInformationType[] = [

@@ -1,9 +1,10 @@
 import React from 'react';
 
-import LightSectionHeading from '../../ui/headings/light-section-heading/LightSectionHeading';
-import DarkSectionHeading from '../../ui/headings/dark-section-heading/DarkSectionHeading';
+import { MLightSectionHeading } from '../../ui/headings/light-section-heading/LightSectionHeading';
+import { MDarkSectionHeading } from '../../ui/headings/dark-section-heading/DarkSectionHeading';
 
 import './PageArticle.scss';
+import { textAnimation } from '../../animation/animations';
 
 interface PageArticleProps {
   firstWord: string;
@@ -13,8 +14,12 @@ interface PageArticleProps {
 export default function PageArticle({ firstWord, secondWord }: PageArticleProps) {
   return (
     <div className="page-article">
-      <LightSectionHeading>{firstWord}</LightSectionHeading>
-      <DarkSectionHeading>{secondWord}</DarkSectionHeading>
+      <MLightSectionHeading variants={textAnimation} custom={0.5}>
+        {firstWord}
+      </MLightSectionHeading>
+      <MDarkSectionHeading variants={textAnimation} custom={1}>
+        {secondWord}
+      </MDarkSectionHeading>
     </div>
   );
 }

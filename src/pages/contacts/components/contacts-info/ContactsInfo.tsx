@@ -1,11 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import { ModalProps } from '../../../../types/types';
+import { imageAnimation, textAnimation } from '../../../../animation/animations';
 
 import PageArticle from '../../../../components/page-article/PageArticle';
-import BigArticleText from '../../../../ui/text/big-article-text/BigArticleText';
-import SmallInfoText from '../../../../ui/text/small-info-text/SmallInfoText';
-import ThickButton from '../../../../ui/buttons/thick-button/ThickButton';
+import { MBigArticleText } from '../../../../ui/text/big-article-text/BigArticleText';
+import { MSmallInfoText } from '../../../../ui/text/small-info-text/SmallInfoText';
+import { MThickButton } from '../../../../ui/buttons/thick-button/ThickButton';
 
 import './ContactInfo.scss';
 
@@ -17,13 +19,19 @@ export default function ContactsInfo({ setIsModalOpen }: ContactsInfoProps) {
   return (
     <div className="contacts__info">
       <PageArticle firstWord="контактная" secondWord="информация" />
-      <div className="contacts__info_text">
-        <BigArticleText>«Digital Project»</BigArticleText>
-        <SmallInfoText>г. Москва, Фролов переулок 2</SmallInfoText>
-      </div>
-      <BigArticleText>+7 (999) 888-77-66</BigArticleText>
-      <SmallInfoText>digital@mail.ru</SmallInfoText>
-      <ThickButton onClick={onModalOpen}>Обратная связь</ThickButton>
+      <motion.div variants={textAnimation} custom={2} className="contacts__info_text">
+        <MBigArticleText>«Digital Project»</MBigArticleText>
+        <MSmallInfoText>г. Москва, Фролов переулок 2</MSmallInfoText>
+      </motion.div>
+      <MBigArticleText variants={imageAnimation} custom={3}>
+        +7 (999) 888-77-66
+      </MBigArticleText>
+      <MSmallInfoText variants={imageAnimation} custom={3}>
+        digital@mail.ru
+      </MSmallInfoText>
+      <MThickButton variants={imageAnimation} custom={3} onClick={onModalOpen}>
+        Обратная связь
+      </MThickButton>
     </div>
   );
 }

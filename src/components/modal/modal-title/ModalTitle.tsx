@@ -16,9 +16,9 @@ export default function ModalTitle({ isModalOpen, setIsModalOpen }: ModalProps) 
   return (
     <div className="modal__title">
       <BigInfoText>Связаться с нами</BigInfoText>
-      <div className="modal__title_close" onChange={onModalOpen}>
+      <button type="button" className="modal__title_close" onClick={onModalOpen}>
         <img src={Close} alt="" />
-      </div>
+      </button>
     </div>
   );
 }

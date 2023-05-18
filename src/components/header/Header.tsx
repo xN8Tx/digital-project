@@ -14,7 +14,7 @@ export default function Header() {
       <div className="wrapper">
         <HeaderLogo />
         <HeaderBurger isBurgerActive={isBurgerActive} setIsBurgerActive={setIsBurgerActive} />
-        <HeaderNavList isBurgerActive={isBurgerActive} />
+        <HeaderNavList isBurgerActive={isBurgerActive} setIsBurgerActive={setIsBurgerActive} />
       </div>
     </header>
   );

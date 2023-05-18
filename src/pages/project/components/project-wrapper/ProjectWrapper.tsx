@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useProjectStore } from '../../../../store/project-store';
 
 import PageArticle from '../../../../components/page-article/PageArticle';
@@ -14,10 +15,10 @@ export default function ProjectWrapper() {
   const secondWord: string = entities.name.split(' ').pop()!;
 
   return (
-    <div className="project__wrapper">
+    <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} className="project__wrapper">
       <PageArticle firstWord={firstWord} secondWord={secondWord} />
       <ProjectCover />
       <ProjectText />
-    </div>
+    </motion.section>
   );
 }

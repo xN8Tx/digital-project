@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ModalProps } from '../../types/types';
 
 import ModalWrapper from './modal-wrapper/ModalWrapper';

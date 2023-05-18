@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 
 import { ModalProps } from '../../../types/types';
@@ -28,7 +29,14 @@ export default function ModalWrapper({ isModalOpen, setIsModalOpen }: ModalProps
   };
 
   return (
-    <div className="modal__wrapper">
+    <motion.div
+      initial={{ y: -200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.3,
+      }}
+      className="modal__wrapper"
+    >
       <ModalTitle isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <ContactForm
         name={name}
@@ -43,6 +51,6 @@ export default function ModalWrapper({ isModalOpen, setIsModalOpen }: ModalProps
         setMessage={setMessage}
       />
       <ThinButton onClick={onSendMessage}>Отправить</ThinButton>
-    </div>
+    </motion.div>
   );
 }

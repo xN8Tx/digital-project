@@ -1,9 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-import ProjectItemImage from './projects-item-image/ProjectItemImage';
-import ProjectItemText from './project-item-text/ProjectItemText';
+import { MProjectItemImage } from './projects-item-image/ProjectItemImage';
+import { MProjectItemText } from './project-item-text/ProjectItemText';
 
 import './ProjectItem.scss';
+import { imageAnimation, textAnimation } from '../../../../animation/animations';
 
 interface ProjectsItemProps {
   id: number;
@@ -14,9 +16,9 @@ interface ProjectsItemProps {
 
 export default function ProjectsItem({ id, name, description, src }: ProjectsItemProps) {
   return (
-    <div className="project_item">
-      <ProjectItemImage id={id} src={src} />
-      <ProjectItemText id={id} name={name} description={description} />
-    </div>
+    <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 0.5, once: true }} className="project_item">
+      <MProjectItemImage id={id} src={src} variants={imageAnimation} custom={1} />
+      <MProjectItemText id={id} name={name} description={description} variants={textAnimation} custom={1} />
+    </motion.div>
   );
 }

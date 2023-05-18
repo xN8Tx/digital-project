@@ -1,8 +1,7 @@
 .home-slider__text {
-  @apply relative h-full flex items-center justify-start transition-all;
+  @apply relative h-full flex items-center justify-start;
 
   width: 400px;
-  animation: sliderAnimations 1s linear;
 
   @media (max-width: 768px) {
     & {

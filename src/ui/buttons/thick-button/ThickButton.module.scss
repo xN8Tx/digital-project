@@ -1,5 +1,5 @@
 .ThickButton {
-  @apply btn-thick;
+  @apply btn-thick transition-none;
   background-color: #333333 !important;
 
   @media (hover: hover) {

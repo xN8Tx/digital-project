@@ -1,7 +1,9 @@
 import React from 'react';
 import { useGalleryStore } from '../../../../store/gallery-store';
 
-import GalleyItem from '../gallery-item/GalleyItem';
+import {} from '../../../../animation/animations';
+
+import { MGalleryItem } from '../gallery-item/GalleyItem';
 
 import './GalleryList.scss';
 
@@ -19,7 +21,15 @@ export default function GalleryList() {
           count += 1;
           return (
             <div key={photo.id} className="gallery__list_row">
-              <GalleyItem id={photo.id} image={photo.image} />
+              <MGalleryItem
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: count * 0.1,
+                }}
+                id={photo.id}
+                image={photo.image}
+              />
             </div>
           );
         }

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import LightSectionHeading from '../../../ui/headings/light-section-heading/LightSectionHeading';
-import DarkSectionHeading from '../../../ui/headings/dark-section-heading/DarkSectionHeading';
-import DarkThickLink from '../../../ui/links/dark-thick-link/DarkThickLink';
+import { LightSectionHeading } from '../../../ui/headings/light-section-heading/LightSectionHeading';
+import { DarkSectionHeading } from '../../../ui/headings/dark-section-heading/DarkSectionHeading';
+import { DarkThickLink } from '../../../ui/links/dark-thick-link/DarkThickLink';
 
 import './ErrorWrapper.scss';
 

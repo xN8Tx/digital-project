@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-// I think i catch some bug with this rule...
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 
 import ContactForm from '../../../../../components/contact-form/ContactForm';
-import ThickButton from '../../../../../ui/buttons/thick-button/ThickButton';
+import { ThickButton } from '../../../../../ui/buttons/thick-button/ThickButton';
 
 import './ContactUsForm.scss';
+import { imageAnimation } from '../../../../../animation/animations';
 
 export default function ContactUsForm() {
   const [name, setName] = useState<string>('');
@@ -26,7 +26,7 @@ export default function ContactUsForm() {
   };
 
   return (
-    <div className="home-contact__form">
+    <motion.div variants={imageAnimation} custom={1} className="home-contact__form">
       <ContactForm
         name={name}
         phoneNumber={phoneNumber}
@@ -40,6 +40,6 @@ export default function ContactUsForm() {
         setMessage={setMessage}
       />
       <ThickButton onClick={onSendMessage}>Отправить</ThickButton>
-    </div>
+    </motion.div>
   );
 }
